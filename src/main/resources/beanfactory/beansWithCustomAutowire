@@ -10,12 +10,13 @@
           p:maxSpeed="200"
     />
 
-    <bean id="myBeanPostProcessor"
-          class="ch4.beanLifeCycle.MyBeanPostProcessor"
-
-    />
-    <bean id="myBeanFactoryPostProcessor"
-          class="ch4.beanLifeCycle.MyBeanFactoryPostProcessor"
-    />
+    <bean id="customAutowireConfigurer"
+          class="org.springframework.beans.factory.annotation.CustomAutowireConfigurer">
+        <property name="customQualifierTypes">
+            <set>
+                <value>test.FineQualifier</value>
+            </set>
+        </property>
+    </bean>
 
 </beans>

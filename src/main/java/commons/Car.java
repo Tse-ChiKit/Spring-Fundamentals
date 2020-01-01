@@ -1,9 +1,9 @@
 package commons;
 
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.*;
 
-public class Car {
+public class Car implements BeanFactoryAware, BeanNameAware, InitializingBean, DisposableBean {
 
     private String brand;
     private String color;
