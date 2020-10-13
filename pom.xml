@@ -43,7 +43,7 @@
         <file.encoding>UTF-8</file.encoding>
         <spring.version>4.2.2.RELEASE</spring.version>
         <groovy.version>2.3.6</groovy.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
 
     </properties>
 
